@@ -8,7 +8,7 @@ export default function Footer() {
   ];
 
   return (
-    <section id="contact" style={{ maxWidth: 1100, margin: "0 auto", padding: "4rem 2rem 2rem" }}>
+    <section id="contact" style={{ maxWidth: 1100, margin: "0 auto", padding: "4rem 1.25rem 2rem" }}>
       <motion.div
         initial={{ opacity: 0, y: 32 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -16,16 +16,15 @@ export default function Footer() {
         transition={{ duration: 0.7 }}
         style={{ borderTop: "1px solid rgba(255,255,255,0.07)", paddingTop: "3rem" }}
       >
-        <div style={{ display: "grid", gridTemplateColumns: "1fr auto", gap: "2rem", alignItems: "start", marginBottom: "3rem" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: "2rem", marginBottom: "3rem" }}>
 
           <div>
-            <div style={{ fontFamily: "var(--font-serif)", fontSize: "1.8rem", letterSpacing: "-0.02em", marginBottom: "0.5rem", color: "#f0f0f4" }}>
+            <div style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(1.4rem, 6vw, 1.8rem)", letterSpacing: "-0.02em", marginBottom: "0.5rem", color: "#f0f0f4" }}>
               Olanrewaju Abdulazeez
             </div>
             <div style={{ color: "#9ca3af", fontSize: "0.9rem", fontWeight: 300, marginBottom: "1.5rem" }}>
               Eazyholar · Mendy — Frontend Dev · Web3 · Bot Architect
             </div>
-
             <div style={{ display: "flex", flexDirection: "column", gap: "0.6rem" }}>
               {contacts.map((c) => {
                 return (
@@ -44,7 +43,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div style={{ textAlign: "right" }}>
+          <div>
             <div style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem", background: "rgba(6,214,160,0.1)", border: "1px solid rgba(6,214,160,0.25)", borderRadius: "999px", padding: "0.3rem 0.75rem", fontSize: "0.75rem", color: "#06d6a0", fontWeight: 500, marginBottom: "1rem" }}>
               <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#06d6a0", display: "inline-block" }} />
               Available for Work
@@ -54,7 +53,7 @@ export default function Footer() {
             </div>
             <a
               href="mailto:eazyholar2607@gmail.com"
-              style={{ display: "inline-flex", alignItems: "center", padding: "0.6rem 1.2rem", borderRadius: "999px", background: "#3b82f6", color: "#fff", fontWeight: 600, fontSize: "0.8rem", textDecoration: "none" }}
+              style={{ display: "inline-flex", alignItems: "center", padding: "0.7rem 1.4rem", borderRadius: "999px", background: "#3b82f6", color: "#fff", fontWeight: 600, fontSize: "0.875rem", textDecoration: "none" }}
             >
               Send a Message
             </a>
