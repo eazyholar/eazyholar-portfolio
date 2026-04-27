@@ -67,7 +67,7 @@ export default function Footer() {
           </div>
 
           <div style={{ color: "#6b7280", fontSize: "0.78rem" }}>
-            © 2025 Olanrewaju Abdulazeez — All rights reserved
+            © Olanrewaju Abdulazeez.
           </div>
         </div>
       </div>
