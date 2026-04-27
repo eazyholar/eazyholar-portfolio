@@ -8,7 +8,6 @@ const dmSerif = DM_Serif_Display({
   subsets: ["latin"],
   variable: "--font-serif",
 });
-
 const dmSans = DM_Sans({
   weight: ["300", "400", "500", "600"],
   subsets: ["latin"],
@@ -17,20 +16,13 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: "Olanrewaju Abdulazeez — Frontend Dev · Web3 · Bot Architect",
-  description:
-    "Portfolio of Olanrewaju Abdulazeez (Eazyholar/Mendy) — building products at the edge of Web & Web3.",
+  description: "Portfolio of Olanrewaju Abdulazeez (Eazyholar/Mendy) — building products at the edge of Web & Web3.",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${dmSerif.variable} ${dmSans.variable}`}>
-        {children}
-      </body>
+      <body className={`${dmSerif.variable} ${dmSans.variable}`}>{children}</body>
     </html>
   );
 }

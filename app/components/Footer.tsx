@@ -2,69 +2,75 @@
 import { motion } from "framer-motion";
 
 export default function Footer() {
-  const contacts = [
-    { icon: "📩", label: "eazyholar2607@gmail.com", href: "mailto:eazyholar2607@gmail.com" },
-    { icon: "☎️", label: "+2348062215967", href: "tel:+2348062215967" },
-  ];
-
   return (
-    <section id="contact" style={{ maxWidth: 1100, margin: "0 auto", padding: "4rem 1.25rem 2rem" }}>
-      <motion.div
-        initial={{ opacity: 0, y: 32 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.7 }}
-        style={{ borderTop: "1px solid rgba(255,255,255,0.07)", paddingTop: "3rem" }}
-      >
-        <div style={{ display: "flex", flexDirection: "column", gap: "2rem", marginBottom: "3rem" }}>
+    <footer id="contact" style={{ background: "#080809", borderTop: "1px solid rgba(255,255,255,0.06)" }}>
 
-          <div>
-            <div style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(1.4rem, 6vw, 1.8rem)", letterSpacing: "-0.02em", marginBottom: "0.5rem", color: "#f0f0f4" }}>
-              Olanrewaju Abdulazeez
-            </div>
-            <div style={{ color: "#9ca3af", fontSize: "0.9rem", fontWeight: 300, marginBottom: "1.5rem" }}>
-              Frontend Dev · Web3 · Bot Architect· Web3 Community Management
-            <div style={{ display: "flex", flexDirection: "column", gap: "0.6rem" }}>
-              {contacts.map((c) => {
-                return (
-                  <a
-                    key={c.label}
-                    href={c.href}
-                    style={{ display: "flex", alignItems: "center", gap: "0.6rem", color: "#9ca3af", textDecoration: "none", fontSize: "0.875rem" }}
-                  >
-                    <div style={{ width: 32, height: 32, background: "#1a1a1f", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", fontSize: "0.8rem", flexShrink: 0 }}>
-                      {c.icon}
-                    </div>
-                    {c.label}
-                  </a>
-                );
-              })}
-            </div>
-          </div>
-
-          <div>
-            <div style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem", background: "rgba(6,214,160,0.1)", border: "1px solid rgba(6,214,160,0.25)", borderRadius: "999px", padding: "0.3rem 0.75rem", fontSize: "0.75rem", color: "#06d6a0", fontWeight: 500, marginBottom: "1rem" }}>
-              <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#06d6a0", display: "inline-block" }} />
-              Available for Work
-            </div>
-            <div style={{ color: "#9ca3af", fontSize: "0.82rem", fontWeight: 300, lineHeight: 1.7, marginBottom: "1.5rem" }}>
-              Open to freelance contracts, Web3 roles and collaborations.
-            </div>
-            <a
-              href="mailto:eazyholar2607@gmail.com"
-              style={{ display: "inline-flex", alignItems: "center", padding: "0.7rem 1.4rem", borderRadius: "999px", background: "#3b82f6", color: "#fff", fontWeight: 600, fontSize: "0.875rem", textDecoration: "none" }}
+      {/* Big CTA block */}
+      <div style={{ maxWidth: 1100, margin: "0 auto", padding: "6rem 1.5rem 4rem", textAlign: "center" }}>
+        <motion.div
+          initial={{ opacity: 0, y: 32 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
+          <p style={{ fontSize: "0.75rem", fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", color: "#3b82f6", marginBottom: "1rem" }}>
+            Let's Work Together
+          </p>
+          <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.2rem, 7vw, 4.5rem)", letterSpacing: "-0.04em", color: "#f0f0f4", lineHeight: 1.05, marginBottom: "1.5rem" }}>
+            Ready to build<br />
+            <em style={{ fontStyle: "italic", color: "#06d6a0" }}>something great?</em>
+          </h2>
+          <p style={{ color: "#9ca3af", fontWeight: 300, fontSize: "1rem", lineHeight: 1.7, maxWidth: 480, margin: "0 auto 2.5rem" }}>
+            Whether it's a dApp, a bot, a full frontend, or community strategy — I'm open to new projects and collaborations.
+          </p>
+          <div style={{ display: "flex", gap: "0.75rem", justifyContent: "center", flexWrap: "wrap" }}>
+            <a href="mailto:eazyholar2607@gmail.com"
+              style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", padding: "0.9rem 1.8rem", borderRadius: "999px", background: "#3b82f6", color: "#fff", fontWeight: 600, fontSize: "0.9rem", textDecoration: "none", transition: "all .2s" }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "#2563eb"; (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)"; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = "#3b82f6"; (e.currentTarget as HTMLElement).style.transform = ""; }}
             >
-              Send a Message
+              ✉ Send an Email
+            </a>
+            <a href="tel:+2348062215967"
+              style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", padding: "0.9rem 1.8rem", borderRadius: "999px", background: "transparent", color: "#f0f0f4", border: "1px solid rgba(255,255,255,0.12)", fontWeight: 600, fontSize: "0.9rem", textDecoration: "none", transition: "all .2s" }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.05)"; (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)"; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = "transparent"; (e.currentTarget as HTMLElement).style.transform = ""; }}
+            >
+              📞 08062215967
             </a>
           </div>
+        </motion.div>
+      </div>
 
+      {/* Bottom bar */}
+      <div style={{ borderTop: "1px solid rgba(255,255,255,0.06)", padding: "1.75rem 1.5rem" }}>
+        <div style={{ maxWidth: 1100, margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "1rem" }}>
+          <div style={{ fontFamily: "var(--font-serif)", fontSize: "1rem", color: "#f0f0f4" }}>
+            Ola<span style={{ color: "#3b82f6" }}>.</span>dev
+          </div>
+
+          {/* Social links */}
+          <div style={{ display: "flex", gap: "0.75rem" }}>
+            {[
+              { label: "Twitter", href: "https://twitter.com/eazyholar", short: "𝕏" },
+              { label: "GitHub", href: "https://github.com/eazyholar", short: "GH" },
+              { label: "LinkedIn", href: "#", short: "in" },
+            ].map(s => (
+              <a key={s.label} href={s.href} target="_blank" rel="noreferrer"
+                style={{ width: 36, height: 36, borderRadius: 8, background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "0.75rem", fontWeight: 700, color: "#9ca3af", textDecoration: "none", transition: "all .2s" }}
+                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "rgba(59,130,246,0.12)"; (e.currentTarget as HTMLElement).style.color = "#3b82f6"; (e.currentTarget as HTMLElement).style.borderColor = "rgba(59,130,246,0.3)"; }}
+                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.04)"; (e.currentTarget as HTMLElement).style.color = "#9ca3af"; (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.08)"; }}
+              >
+                {s.short}
+              </a>
+            ))}
+          </div>
+
+          <div style={{ color: "#6b7280", fontSize: "0.78rem" }}>
+            © 2025 Olanrewaju Abdulazeez — All rights reserved
+          </div>
         </div>
-
-        <div style={{ borderTop: "1px solid rgba(255,255,255,0.07)", paddingTop: "1.5rem", textAlign: "center", color: "#6b7280", fontSize: "0.78rem" }}>
-          2025 Olanrewaju Abdulazeez.
-        </div>
-
-      </motion.div>
-    </section>
+      </div>
+    </footer>
   );
 }
