@@ -31,7 +31,7 @@ export default function About() {
             <span style={{ color: "#a78bfa" }}>decentralised networks</span>.
           </p>
           <p style={{ color: "#9ca3af", fontSize: "0.9rem", fontWeight: 300, lineHeight: 1.7 }}>
-            Based in Nigeria. Building globally. Obsessed with the intersection of great UI and smart infrastructure.
+            Based in Nigeria. Building globally. Obsessed with the intersection of great UI, smart infrastructure and disciplined community management.
           </p>
         </motion.div>
 
@@ -39,7 +39,7 @@ export default function About() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12 }}>
           {[
             { num: "3+", unit: "yrs", label: "Frontend Engineering", color: "#3b82f6", delay: 0.1 },
-            { num: "12+", unit: "", label: "Projects Shipped", color: "#06d6a0", delay: 0.15 },
+            { num: "4+", unit: "", label: "Projects Shipped", color: "#06d6a0", delay: 0.15 },
             { num: "5K+", unit: "", label: "Community Members", color: "#a78bfa", delay: 0.2 },
           ].map((stat) => (
             <motion.div
@@ -69,7 +69,7 @@ export default function About() {
           <p style={{ fontSize: "0.7rem", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "#6b7280", marginBottom: "0.6rem" }}>
             Current Focus
           </p>
-          {["Web3 dApp Interfaces", "Automated Discord Bots", "Next.js Full-Stack Apps"].map((item) => (
+          {["Web3 dApp Interfaces", "Automated Discord Bots", "Next.js Full-Stack Apps", "Web3 Community Management"].map((item) => (
             <div key={item} style={{ fontSize: "0.95rem", color: "#f0f0f4", fontWeight: 500, marginBottom: "0.35rem" }}>
               — {item}
             </div>

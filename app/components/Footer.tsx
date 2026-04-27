@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   const contacts = [
-    { icon: "✉", label: "eazyholar2607@gmail.com", href: "mailto:eazyholar2607@gmail.com" },
-    { icon: "📞", label: "08062215967", href: "tel:+2348062215967" },
+    { icon: "📩", label: "eazyholar2607@gmail.com", href: "mailto:eazyholar2607@gmail.com" },
+    { icon: "☎️", label: "+2348062215967", href: "tel:+2348062215967" },
   ];
 
   return (
@@ -23,8 +23,7 @@ export default function Footer() {
               Olanrewaju Abdulazeez
             </div>
             <div style={{ color: "#9ca3af", fontSize: "0.9rem", fontWeight: 300, marginBottom: "1.5rem" }}>
-              Eazyholar · Mendy — Frontend Dev · Web3 · Bot Architect
-            </div>
+              Frontend Dev · Web3 · Bot Architect· Web3 Community Management
             <div style={{ display: "flex", flexDirection: "column", gap: "0.6rem" }}>
               {contacts.map((c) => {
                 return (
@@ -62,7 +61,7 @@ export default function Footer() {
         </div>
 
         <div style={{ borderTop: "1px solid rgba(255,255,255,0.07)", paddingTop: "1.5rem", textAlign: "center", color: "#6b7280", fontSize: "0.78rem" }}>
-          2025 Olanrewaju Abdulazeez — Crafted with Next.js and a lot of midnight energy
+          2025 Olanrewaju Abdulazeez.
         </div>
 
       </motion.div>

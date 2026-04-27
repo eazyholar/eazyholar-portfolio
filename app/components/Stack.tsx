@@ -27,7 +27,7 @@ const groups = [
   },
   {
     label: "Specialized",
-    tags: ["Web3 / Blockchain", "ethers.js", "Solidity Basics", "Discord.js", "Bot Architecture", "REST APIs", "Community Mgmt"],
+    tags: ["Web3 / Blockchain", "ethers.js", "Solidity Basics", "Discord.js", "Bot Architecture", "REST APIs", "Community Management"],
     color: "#06d6a0", bg: "rgba(6,214,160,0.07)", border: "rgba(6,214,160,0.35)",
     skills: [],
   },
